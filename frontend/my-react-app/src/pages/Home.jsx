@@ -4,7 +4,7 @@ import Loader from '../components/Loader';
 import { useGetAllTaskQuery } from '../provider/redux/queries/Task';
 
 const Home = () => {
-
+  
     const { data, isLoading, isError, refetch } = useGetAllTaskQuery();
  
     useEffect(()=>{
@@ -51,4 +51,3 @@ const Home = () => {
 }
 
 export default Home
-
